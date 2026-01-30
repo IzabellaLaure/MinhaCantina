@@ -4,20 +4,25 @@
 
 <h3>Login</h3>
 
-<form class="mt-5" style="max-width: 250px;">
-    <div class="form-outline mb-4">
-        <label class="form-label" for="usuario">Username</label>
-        <input type="text" id="usuario" class="form-control" />
-    </div>
+@*1 tag form > 1 campo para username, 1 campo para senha, 1 botão *@
+<form class="p-3 border border-5 rounded" style="max-width: 400px;" >
 
-    <div class="form-outline mb-4">
-        <label class="form-label" for="senha">Senha</label>
-        <input type="password" id="senha" class="form-control" />
-    </div>
+	<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Usuario:</label>
+		<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="usuario" maxlength="15">
+	</div>
 
-    <input type="button" class="btn btn-primary btn-block mb-4" value="Entrar">
+	<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Senha:</label>
+		<input type="password" class="form-control" id="exampleFormControlInput1" placeholder="senha" maxlength="10">
+	</div>
+
+	<div>
+		<button class="btn btn-primary">Entrar</button>
+	</div>
 </form>
 
 @code {
 
 }
+
